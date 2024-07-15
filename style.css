@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --darkColor: #282a39;
+  --primaryColor: #724025;
+  --lightColor: #f8f3ed;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--lightColor);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 0 72px;
+  height: 100px;
+}
+
+header h3 {
+  font-size: 24px;
+  color: var(--primaryColor);
+}
+header ul {
+  display: flex;
+  gap: 24px;
+}
+ul a {
+  color: var(--primaryColor);
+  font-size: 16px;
+  font-weight: bold;
+}
+header .icon {
+  display: flex;
+  gap: 12px;
+}
+
+header .icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Start Hero Section */
+
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 72px;
+  align-items: center;
+}
+section h1 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 72px;
+  color: var(--primaryColor);
+  max-width: 600px;
+  text-align: center;
+}
+
+section .sub {
+  font-size: 20px;
+  max-width: 892px;
+  text-align: center;
+}
+section button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--primaryColor);
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  font-size: 18px;
+  border-radius: 20px 0 20px 0;
+}
+
+section .catalog {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.catalog img {
+  width: 100%;
+  height: auto;
+}
+/* Finish Hero Section */
+
+/* Start Surprise Section */
+.surprise {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+}
+.imageBG {
+  width: 50%;
+}
+.imageBG img {
+  width: 100%;
+  max-height: 720px;
+  object-fit: cover;
+}
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.content h2 {
+  color: var(--primaryColor);
+  font-family: "Abhaya Libre", serif;
+  font-size: 54px;
+  max-width: 416px;
+  text-align: center;
+}
+
+.costumers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 72px;
+  gap: 72px;
+  background-color: #f1ede4;
+}
+.costumers hr {
+  border: 1px solid #b9b5ab;
+  transform: rotate(90deg);
+  height: 100%;
+  width: 100px;
+}
+.costumers .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.costumers .item h2 {
+  font-size: 68px;
+  font-family: "Abhaya Libre", serif;
+  color: #724025;
+  width: fit-content;
+}
+
+.costumers .item p {
+  font-size: 20px;
+  color: #724025;
+  font-weight: 600;
+}
+
+/* Finish Surprise Section */
+
+/* Start Products Section */
+
+section.service {
+  padding: 80px 72px;
+}
+.service h2 {
+  color: var(--primaryColor);
+  font-family: "Abhaya Libre", serif;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  background-color: #f2efea;
+  border-radius: 100px;
+  padding: 8px;
+}
+.tabs p {
+  padding: 16px 10px;
+  text-align: center;
+  font-size: 20px;
+  width: 140px;
+}
+.tabs .active {
+  background-color: white;
+  border-radius: 100px;
+}
+
+.tabs .active:hover {
+  background-color: var(--primaryColor);
+  color: white;
+}
+.cards {
+  display: flex;
+  gap: 32px;
+}
+
+.card {
+  flex: 1;
+  text-align: center;
+}
+
+.card > img {
+  border-radius: 50px;
+  width: 100%;
+}
+.card > h3 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 28px;
+  color: black;
+  margin-top: 36px;
+}
+.card .review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0 20px;
+}
+.review img {
+  margin-right: 20px;
+}
+.review span:first-of-type {
+  font-size: 22px;
+  font-weight: 800;
+  margin-right: 8px;
+}
+
+.review span:last-of-type {
+  font-size: 14px;
+}
+
+.card p {
+  text-align: left;
+  font-size: 14px;
+  margin: 12px 0;
+}
+.card .price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+/* Finish Products Section */
+
+/* Start About Section */
+section.about {
+  background-color: #e8e2e2;
+  gap: 64px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primaryColor);
+}
+.heading h2 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 40px;
+}
+
+section.about .content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+}
+.content .textContent {
+  max-width: 700px;
+}
+.textContent > p {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+/* Finish About Section */
+/* Start Testimonials Section */
+section.testimonials {
+  gap: 64px;
+}
+.testimonialsCard {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+.testimonialsCard .testi {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.testi .profile {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.testi > p {
+  max-width: 372px;
+}
+.profile .name {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.name p {
+  color: var(--primaryColor);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* start blogs */
+.Blog {
+  background-color: #e8e2e2;
+  gap: 64px;
+}
+.Ourphoto {
+  display: flex;
+  gap: 42px;
+}
+.photo {
+  flex: 1;
+  text-align: center;
+  background-color: #ffffff;
+  border: 0.7px solid #724025;
+  border-radius: 0px 80px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.photo img {
+  border-radius: 0px 80px 0px 80px;
+  width: 100%;
+}
+.photo h4 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 24px;
+  color: #724025;
+}
+.photo span {
+  color: #616167;
+  display: flex;
+  justify-content: right;
+}
+/* Start footer */
+footer {
+  background-color: #282a39;
+  color: white;
+  padding: 80px 72px;
+  display: flex;
+  gap: 168px;
+  justify-content: space-between;
+}
+
+.footerContent {
+  max-width: 436px;
+}
+
+.footerContent h4 {
+  font-size: 28px;
+  font-family: "Abhaya Libre", serif;
+  margin-bottom: 24px;
+}
+
+.footerContent p:first-of-type {
+  margin-bottom: 64px;
+}
+
+.footerContent p:nth-of-type(2) {
+  margin-bottom: 8px;
+}
+
+.footerlinks {
+  width: 100%;
+}
+
+.footerlinks h4 {
+  color: #fff;
+  font-family: "Abhaya Libre ExtraBold";
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.allLinks {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.allLinks .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input .inputContent {
+  width: 100%;
+  display: flex;
+  background-color: #393b48;
+  padding: 6px 6px 6px 48px;
+  border-radius: 20px;
+  position: relative;
+}
+.input .inputContent::before {
+  content: "";
+  position: absolute;
+  background: url(assets/icons/msg.svg);
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+.inputContent input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+.inputContent button {
+  padding: 16px 20px;
+  width: 140px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  color: #282a39;
+}
+/* End footer */
